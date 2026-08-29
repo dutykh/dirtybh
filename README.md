@@ -69,10 +69,7 @@ a black hole surrounded by a non-trivial matter distribution. Its line element
 carries two independent metric functions,
 
 $$
-\mathrm{d}s^{2}  =  - f(r) e^{-2g(r)} \mathrm{d}t^{2}
- +  \frac{\mathrm{d}r^{2}}{f(r)}
- +  r^{2} \bigl(\mathrm{d}\vartheta^{2}
-      + \sin^{2}\vartheta \mathrm{d}\varphi^{2}\bigr).
+\mathrm{d}s^{2} = - f(r) e^{-2g(r)} \mathrm{d}t^{2} + \frac{\mathrm{d}r^{2}}{f(r)} + r^{2} \bigl(\mathrm{d}\vartheta^{2} + \sin^{2}\vartheta \mathrm{d}\varphi^{2}\bigr).
 $$
 
 The function $f$ is fixed by the enclosed mass, $f(r) = 1 - 2m(r)/r$, while the
@@ -87,8 +84,7 @@ standard prescription, by replacing the point-like source with a Gaussian
 smeared energy density of minimal width $\sqrt{\theta}$,
 
 $$
-\rho(r)  =  \frac{M}{(4\pi\theta)^{3/2}}
-              \exp\left(-\frac{r^{2}}{4\theta}\right),
+\rho(r) = \frac{M}{(4\pi\theta)^{3/2}} \exp\left(-\frac{r^{2}}{4\theta}\right),
 $$
 
 where $\theta$ is the non-commutativity parameter (an area). Integrating the
@@ -100,24 +96,18 @@ singularity.
 Every routine in this repository works with the two dimensionless quantities
 
 $$
-x  =  \frac{r}{2M},
-\qquad
-\mu  =  \frac{M}{\sqrt{\theta}},
+x = \frac{r}{2M}, \qquad \mu = \frac{M}{\sqrt{\theta}},
 $$
 
 so that $x = 1$ is the Schwarzschild radius and $\mu$ is the dimensionless
 black hole mass. In these variables the two metric functions read
 
 $$
-f(x)  =  1  -  \frac{\mathrm{erf}(\mu x)}{x}
-           +  \frac{2\mu}{\sqrt{\pi}} e^{-\mu^{2}x^{2}},
+f(x) = 1 - \frac{\mathrm{erf}(\mu x)}{x} + \frac{2\mu}{\sqrt{\pi}} e^{-\mu^{2}x^{2}},
 $$
 
 $$
-g(x)  =  \frac{\mu}{2}
-           \left[ 1 - \mathrm{erf}(\mu x)
-                 + \frac{2\mu x}{\sqrt{\pi}} e^{-\mu^{2}x^{2}}\right]
-        =  \frac{\mu}{2}\left(1 - \frac{m(r)}{M}\right).
+g(x) = \frac{\mu}{2} \left[ 1 - \mathrm{erf}(\mu x) + \frac{2\mu x}{\sqrt{\pi}} e^{-\mu^{2}x^{2}}\right] = \frac{\mu}{2}\left(1 - \frac{m(r)}{M}\right).
 $$
 
 The second form makes the physical content transparent: the dirtiness is
@@ -164,19 +154,13 @@ Linear perturbations of spin $s$ separate, and the radial part obeys a
 Regge-Wheeler-type master equation
 
 $$
-\frac{\mathrm{d}^{2}\psi}{\mathrm{d}r_{*}^{2}}
- +  \bigl[\omega^{2} - V_{s}(r)\bigr] \psi  =  0,
-\qquad
-\frac{\mathrm{d}r_{*}}{\mathrm{d}r}  =  \frac{e^{g(r)}}{f(r)},
+\frac{\mathrm{d}^{2}\psi}{\mathrm{d}r_{\ast}^{2}} + \bigl[\omega^{2} - V_{s}(r)\bigr] \psi = 0, \qquad \frac{\mathrm{d}r_{\ast}}{\mathrm{d}r} = \frac{e^{g(r)}}{f(r)},
 $$
 
 with the effective potential for a dirty background
 
 $$
-V_{s}(r)  =  f(r) e^{-2g(r)}
-\left[\frac{\ell(\ell+1)}{r^{2}}
-       + (1-s^{2}) \frac{f'(r)}{r}
-       - (1-s) \frac{f(r) g'(r)}{r}\right].
+V_{s}(r) = f(r) e^{-2g(r)} \left[\frac{\ell(\ell+1)}{r^{2}} + (1-s^{2}) \frac{f'(r)}{r} - (1-s) \frac{f(r) g'(r)}{r}\right].
 $$
 
 The three physically relevant spins are covered:
@@ -199,13 +183,11 @@ Quasi-normal modes are the solutions that are purely ingoing at the horizon and
 purely outgoing at spatial infinity,
 
 $$
-\psi  \sim  e^{-i\omega r_{*}} \quad (r \to r_{h}),
-\qquad
-\psi  \sim  e^{+i\omega r_{*}} \quad (r \to \infty).
+\psi \sim e^{-i\omega r_{\ast}} \quad (r \to r_{h}), \qquad \psi \sim e^{+i\omega r_{\ast}} \quad (r \to \infty).
 $$
 
 The admissible frequencies $\omega$ form a discrete set; they are complex, and
-$\mathrm{Im}\omega < 0$ signals damping. Purely imaginary frequencies
+$\mathrm{Im}\omega \lt 0$ signals damping. Purely imaginary frequencies
 correspond to overdamped, non-oscillatory modes, which the article finds to be
 prominent in the near-extremal and extremal regimes.
 
@@ -219,9 +201,7 @@ The black hole exterior $x \in [x_h, \infty)$ is mapped onto the Chebyshev
 interval $y \in [-1, 1]$ by
 
 $$
-x  =  \frac{2 x_{h}}{1-y}
-\qquad\Longleftrightarrow\qquad
-y  =  1 - \frac{2 x_{h}}{x},
+x = \frac{2 x_{h}}{1-y} \qquad\Longleftrightarrow\qquad y = 1 - \frac{2 x_{h}}{x},
 $$
 
 so that $y = -1$ is the event horizon and $y = +1$ is spatial infinity. The
@@ -241,14 +221,10 @@ and this is where the two cases part company.
 **Non-extremal case.** The relevant constant is
 
 $$
-\alpha = \frac{e^{-\mu(x_h-1)/2}}
-              {1 - 4\mu^{3}x_{h}^{2}e^{-\mu^{2}x_{h}^{2}}/\sqrt{\pi}}
-        = \frac{1}{2 x_{h} \kappa},
-\qquad
-\kappa = \tfrac{1}{2} f'(r_h) e^{-g(r_h)},
+\alpha = \frac{e^{-\mu(x_h-1)/2}} {1 - 4\mu^{3}x_{h}^{2}e^{-\mu^{2}x_{h}^{2}}/\sqrt{\pi}} = \frac{1}{2 x_{h} \kappa}, \qquad \kappa = \tfrac{1}{2} f'(r_h) e^{-g(r_h)},
 $$
 
-with $\kappa$ the surface gravity. The logarithmic divergence of $r_{*}$ is
+with $\kappa$ the surface gravity. The logarithmic divergence of $r_{\ast}$ is
 governed by $1/(2\kappa)$.
 
 **Extremal case.** Here $f'(r_e) = 0$ and $\kappa = 0$, so $\alpha$ is
@@ -262,22 +238,20 @@ divergence of the tortoise coordinate at a degenerate horizon.
 The regular amplitude is expanded in a truncated Chebyshev series,
 
 $$
-P(y)  =  \sum_{j=0}^{n-1} a_{j}  T_{j}(y),
+P(y) = \sum_{j=0}^{n-1} a_{j} T_{j}(y),
 $$
 
 and the transformed ordinary differential equation is collocated at the $n$
 Chebyshev roots
 
 $$
-y_{i}  =  \cos\left(\frac{(2i-1)\pi}{2n}\right),
-\qquad i = 1,\dots,n .
+y_{i} = \cos\left(\frac{(2i-1)\pi}{2n}\right), \qquad i = 1,\dots,n .
 $$
 
 The transformed equation is quadratic in the frequency and second order in $y$,
 
 $$
-\sum_{k=0}^{2} \sum_{m=0}^{2}
-L_{km}(y) \Omega^{k} \frac{\mathrm{d}^{m}P}{\mathrm{d}y^{m}} = 0,
+\sum_{k=0}^{2} \sum_{m=0}^{2} L_{km}(y) \Omega^{k} \frac{\mathrm{d}^{m}P}{\mathrm{d}y^{m}} = 0,
 $$
 
 with $L_{12} = L_{21} = L_{22} = 0$, so that the second derivative appears only
@@ -290,8 +264,7 @@ three real $n \times n$ matrices $M_0$, $M_1$, $M_2$.
 The discrete problem is the quadratic (polynomial) eigenvalue problem
 
 $$
-\bigl[ M_{0}  +  i \omega M_{1}  +  \omega^{2} M_{2} \bigr]
-\mathbf{a}  =  \mathbf{0},
+\bigl[ M_{0} + i \omega M_{1} + \omega^{2} M_{2} \bigr] \mathbf{a} = \mathbf{0},
 $$
 
 solved in MATLAB with `polyeig`. The three matrices are real; the imaginary
@@ -356,7 +329,7 @@ of the manuscript. It proceeds through:
    $\Lambda_0$ and $B_2$, $B_1$, $B_0$, each checked against the closed forms
    quoted in the article;
 7. after an explicit `restart`, definition of the entries
-   $\widehat{L}_{00}, \dots, \widehat{L}_{22}$ that the numerical assembler
+   `L00hat` through `L22hat` that the numerical assembler
    implements.
 
 **Note.** The worksheet contains a deliberate `restart` partway through. The
@@ -374,7 +347,7 @@ $y = -1$. It also rewrites $M_{2e}$, $M_{1e}$, $M_{0e}$ as polynomials in
 $\Omega$, which is the form required by the spectral method, and computes the
 limits collected in the corresponding table of the article. It likewise
 contains an explicit `restart` before the definition of
-$\widehat{L}_{00e}, \dots, \widehat{L}_{22e}$.
+`L00ehat` through `L22ehat`.
 
 ### 6.3 `Effective_Potential_in_r_non_extreme.mw` and `Effective_Potential_in_r_extreme.mw`
 
@@ -417,7 +390,7 @@ the three matrices to
 <p>/data/M2_<n>.mat
 ```
 
-in MATLAB ASCII format via `ExportMatrix`. An error is raised if $\ell < s$.
+in MATLAB ASCII format via `ExportMatrix`. An error is raised if $\ell \lt s$.
 
 ### 6.5 `matrixassembler_ext.mpl`
 
@@ -561,7 +534,7 @@ before committing to the largest one.
   non-extremal case, the dimensionless mass $\mu$. Set those three as arguments
   of `MatrixAssembler` in Step 2, then read off the converged eigenvalues in
   Step 3. The overtone index $n$ orders the converged modes by increasing
-  $|\mathrm{Im}\omega|$; it is not an input of the computation, since the
+  $\lvert \mathrm{Im}\omega \rvert$; it is not an input of the computation, since the
   spectral method returns the whole spectrum at once.
 * **The large-mass limit.** Increasing $\mu$ drives the non-extremal spectrum
   towards the classical Schwarzschild values, which is the validation test
