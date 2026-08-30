@@ -1,5 +1,15 @@
 # Quasi-normal modes of non-commutative geometry-inspired dirty black holes
 
+[![Proc. R. Soc. A](https://img.shields.io/badge/Proc.%20R.%20Soc.%20A-481%20%282025%29%2020250021-005a9c)](https://royalsocietypublishing.org/doi/10.1098/rspa.2025.0021)
+[![DOI](https://img.shields.io/badge/DOI-10.1098%2Frspa.2025.0021-1a7f37)](https://doi.org/10.1098/rspa.2025.0021)
+[![arXiv](https://img.shields.io/badge/arXiv-2507.19107-b31b1b)](https://arxiv.org/abs/2507.19107)
+[![License: LGPL v2.1](https://img.shields.io/badge/License-LGPL%20v2.1-4c1)](LICENSE)
+[![Maple](https://img.shields.io/badge/Maple-2022.1%2B-ff6f00)](https://www.maplesoft.com/products/Maple/)
+[![MATLAB](https://img.shields.io/badge/MATLAB-Advanpix%20MCT-0076a8)](https://www.advanpix.com/)
+[![QNMs Hall of Fame](https://img.shields.io/badge/QNMs-Hall%20of%20Fame-8a2be2)](https://qnms.denys-dutykh.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-dutykh%2Fdirtybh-181717?logo=github)](https://github.com/dutykh/dirtybh)
+[![Last commit](https://img.shields.io/github/last-commit/dutykh/dirtybh)](https://github.com/dutykh/dirtybh/commits/main)
+
 **Computational supplemental material**
 
 **Authors**: Dr. Davide Batic, Dr. Denys Dutykh and Zeinabou Ahmed Babou
