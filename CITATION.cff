@@ -1,0 +1,57 @@
+# Dr. Denys Dutykh (Mathematics Department, Khalifa University of Science and Technology, Abu Dhabi, UAE)
+cff-version: 1.2.0
+message: "If you use this code, please cite the article given under preferred-citation."
+title: "dirtybh: quasinormal modes of noncommutative geometry-inspired dirty black holes"
+type: software
+authors:
+  - family-names: Batic
+    given-names: Davide
+    affiliation: "Khalifa University of Science and Technology"
+    orcid: "https://orcid.org/0000-0002-7619-4900"
+  - family-names: Dutykh
+    given-names: Denys
+    affiliation: "Khalifa University of Science and Technology"
+    orcid: "https://orcid.org/0000-0001-5247-2788"
+  - family-names: Babou
+    given-names: Zeinabou Ahmed
+    affiliation: "Khalifa University of Science and Technology"
+repository-code: "https://github.com/dutykh/dirtybh"
+license: LGPL-2.1-only
+version: 1.0.1
+date-released: "2026-11-14"
+keywords:
+  - general-relativity
+  - black-holes
+  - quasinormal-modes
+  - noncommutative-geometry
+  - spectral-methods
+  - chebyshev-polynomials
+  - maple
+  - matlab
+abstract: >-
+  Maple procedures and worksheets, with a MATLAB driver, for the quasinormal modes of scalar, electromagnetic and
+  vector-type gravitational perturbations of the noncommutative geometry-inspired dirty black hole, non-extremal and
+  extremal. The exterior of the black hole is compactified, the quasinormal boundary conditions are built into a
+  factorisation of the solution, and a Chebyshev collocation in multiprecision arithmetic gives a quadratic eigenvalue
+  problem, solved with polyeig and the Advanpix toolbox.
+preferred-citation:
+  type: article
+  title: Quasi-Normal Modes of Non-Commutative Geometry-Inspired Dirty Black Holes
+  authors:
+  - family-names: Batic
+    given-names: Davide
+  - family-names: Dutykh
+    given-names: Denys
+  - family-names: Babou
+    given-names: Zeinabou Ahmed
+  journal: 'Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences'
+  volume: 481
+  issue: '2318'
+  start: 20250021
+  year: 2025
+  month: 7
+  doi: 10.1098/rspa.2025.0021
+  identifiers:
+  - type: url
+    value: https://arxiv.org/abs/2507.19107
+    description: arXiv preprint
