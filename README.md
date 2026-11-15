@@ -132,6 +132,20 @@ Multiprecision Computing Toolbox (a commercial toolbox), whose `mp` class, `mp.D
 figure of this page needs Python 3 with NumPy, SciPy and Matplotlib, and is redrawn from `docs/figures/` by
 `python3 plot_readme_figure.py`.
 
+## A note on the article
+
+The line element (2.1) of the article, on page 4, prints its time component as −f(r) e^(−g(r)) dt². The intended line
+element, from which equations (2.8) to (2.12) follow, carries the factor e^(−2g):
+
+```text
+ds² = −f(r) e^(−2g(r)) dt² + dr²/f(r) + r² dΩ²,
+```
+
+as in the dirty black hole of Nicolini and Spallucci (Classical and Quantum Gravity 27, 015010, 2010). Likewise, the
+identification that follows equation (2.7), on page 5, should read e^(2Λ) = f e^(−2g). The codes use this line element,
+through F = f e^(−g) and the factor f e^(−2g) of the potential, so that the computations and the results of the article
+are not affected.
+
 ## How to cite
 
 If you use this code, please cite the article:
